@@ -1,0 +1,6 @@
+pandas
+requests
+numpy
+joblib
+scikit-learn
+matplotlib #optional
