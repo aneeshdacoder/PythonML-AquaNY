@@ -1,7 +1,13 @@
-# Byte-compiled / optimized / DLL files
+# Python bytecode cache
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
+
+# Joblib cache and memory maps
+.joblib_cache/
+*.joblib
+*.pkl
+*.npy
 
 # C extensions
 *.so
