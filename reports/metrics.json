@@ -1,0 +1,100 @@
+{
+  "turbidity": {
+    "n_test": 3023,
+    "mae": 24.044924447472468,
+    "rmse": 70.95627621310402,
+    "r2": 0.06893920862620284,
+    "persistence_mae": 31.510710642638557,
+    "skill_vs_persistence": 0.23925020130763075,
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae": {
+      "ridge": 25.584400877320814,
+      "random_forest": 23.511887161821534,
+      "hist_gbm": 23.37240982242516
+    },
+    "n_train": 14763,
+    "n_features": 57
+  },
+  "ph": {
+    "n_test": 2648,
+    "mae": 0.08928275365561607,
+    "rmse": 0.1179450576162492,
+    "r2": 0.9601470661423397,
+    "persistence_mae": 0.08861911987860387,
+    "skill_vs_persistence": -0.0020124529390670443,
+    "status": "trained",
+    "best_model": "ridge",
+    "cv_mae": {
+      "ridge": 0.09734615309565531,
+      "random_forest": 0.11599221064304209,
+      "hist_gbm": 0.11330917807371041
+    },
+    "n_train": 13452,
+    "n_features": 57
+  },
+  "dissolved_oxygen": {
+    "n_test": 3507,
+    "mae": 0.5263119222835978,
+    "rmse": 0.8231560535463797,
+    "r2": 0.8691080969642991,
+    "persistence_mae": 0.6194110920526015,
+    "skill_vs_persistence": 0.1493017052740947,
+    "status": "trained",
+    "best_model": "ridge",
+    "cv_mae": {
+      "ridge": 0.5248662270480112,
+      "random_forest": 0.536800504130131,
+      "hist_gbm": 0.5361198183545591
+    },
+    "n_train": 15236,
+    "n_features": 57
+  },
+  "specific_conductance": {
+    "n_test": 6223,
+    "mae": 40.65740366570111,
+    "rmse": 63.353016599653685,
+    "r2": 0.8908245703200779,
+    "persistence_mae": 29.999675798346573,
+    "skill_vs_persistence": -0.35237153368562835,
+    "status": "trained",
+    "best_model": "random_forest",
+    "cv_mae": {
+      "ridge": 44.53149448915724,
+      "random_forest": 43.39044644382171,
+      "hist_gbm": 44.84366519239132
+    },
+    "n_train": 17051,
+    "n_features": 57
+  },
+  "nitrate": {
+    "status": "skipped",
+    "n_train": 355,
+    "n_test": 0
+  },
+  "e_coli": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0
+  },
+  "lead": {
+    "status": "skipped",
+    "n_train": 31,
+    "n_test": 0
+  },
+  "sulfate": {
+    "status": "skipped",
+    "n_train": 53,
+    "n_test": 0
+  },
+  "fluoride": {
+    "status": "skipped",
+    "n_train": 52,
+    "n_test": 0
+  },
+  "hardness": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0
+  }
+}
