@@ -1,0 +1,15 @@
+{
+  "horizon_days": 7,
+  "targets": [
+    "turbidity",
+    "ph",
+    "dissolved_oxygen",
+    "specific_conductance",
+    "nitrate",
+    "e_coli",
+    "lead",
+    "sulfate",
+    "fluoride",
+    "hardness"
+  ]
+}
