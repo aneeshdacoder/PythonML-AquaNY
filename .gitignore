@@ -227,3 +227,7 @@ __marimo__/
 
 #joblib models
 **/models/
+
+venv/
+.venv/
+env/
