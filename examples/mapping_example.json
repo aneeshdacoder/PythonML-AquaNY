@@ -1,0 +1,18 @@
+{
+  "sep": ",",
+  "timezone": "America/New_York",
+  "columns": {
+    "station_id": "StationID",
+    "timestamp": "SampleDateTime",
+    "parameter": "Analyte",
+    "value": "Result",
+    "unit": "Units",
+    "detection_flag": "DetectFlag",
+    "quality_flag": "QCFlag"
+  },
+  "parameter_aliases": {"Diss. O2": "dissolved_oxygen", "Water Temp (F)": "temperature"},
+  "station_columns": {
+    "ID": "station_id", "Name": "name", "Lat": "latitude", "Lon": "longitude",
+    "Type": "site_type", "HUC8": "huc", "Elev_m": "elevation_m"
+  }
+}

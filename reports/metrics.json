@@ -1,100 +1,1394 @@
 {
-  "turbidity": {
-    "n_test": 3023,
-    "mae": 24.044924447472468,
-    "rmse": 70.95627621310402,
-    "r2": 0.06893920862620284,
-    "persistence_mae": 31.510710642638557,
-    "skill_vs_persistence": 0.23925020130763075,
+  "turbidity_h1": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.27075123340251284,
+      "hist_gbm": 0.30986664598704594,
+      "persistence": 0.2521939006930349,
+      "climatology": 0.7345515352581695,
+      "site_climatology": 0.6177547696819068
+    },
+    "n_train": 56293,
+    "n_features": 67,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T15:39:48.962996",
+    "cutoff": "2025-01-18",
+    "known": {
+      "n_test": 15803,
+      "mae": 3.0244700324066356,
+      "rmse": 21.13534959300655,
+      "r2": -0.19869366071341998,
+      "persistence_mae": 3.0244700324066356,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 4.7309878944616095,
+      "skill_vs_climatology": 0.3607106803322686,
+      "interval_coverage": 0.832943112067329,
+      "fallback_share": 0.005224726173989724
+    },
+    "known_classifier": {
+      "n_test": 15803,
+      "base_rate": 0.23356324748465482,
+      "auc": 0.9280782506056541,
+      "avg_precision": 0.8782940762538063,
+      "brier": 0.06812600387509293
+    },
+    "new": {
+      "n_test": 3299,
+      "mae": 15.176796006683004,
+      "rmse": 59.61100219551128,
+      "r2": 0.21071692670942377,
+      "persistence_mae": 15.176796006683004,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 22.681607414536938,
+      "skill_vs_climatology": 0.3308765234620895,
+      "interval_coverage": 0.7705365262200667,
+      "fallback_share": 0.004225777241171125
+    },
+    "new_classifier": {
+      "n_test": 3299,
+      "base_rate": 0.6144286147317369,
+      "auc": 0.9746984886423224,
+      "avg_precision": 0.9868534835949806,
+      "brier": 0.05274512725804573
+    }
+  },
+  "turbidity_h3": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.40596619287848484,
+      "hist_gbm": 0.43027001544045534,
+      "persistence": 0.40051000631641775,
+      "climatology": 0.7346840397375397,
+      "site_climatology": 0.6175501364333448
+    },
+    "n_train": 56210,
+    "n_features": 67,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T15:41:59.751022",
+    "cutoff": "2025-01-16",
+    "known": {
+      "n_test": 15690,
+      "mae": 4.397511157972787,
+      "rmse": 25.21402260205812,
+      "r2": -0.6945883405514006,
+      "persistence_mae": 4.397511157972787,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 4.747312925878973,
+      "skill_vs_climatology": 0.07368416056993332,
+      "interval_coverage": 0.8364563416188655,
+      "fallback_share": 0.012337907591590036
+    },
+    "known_classifier": {
+      "n_test": 15690,
+      "base_rate": 0.2338432122370937,
+      "auc": 0.8609283032425608,
+      "avg_precision": 0.7581007833571608,
+      "brier": 0.10565311540932816
+    },
+    "new": {
+      "n_test": 3277,
+      "mae": 23.090311265238217,
+      "rmse": 77.22307195027838,
+      "r2": -0.33724893466524875,
+      "persistence_mae": 23.090311265238217,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 22.613079192579285,
+      "skill_vs_climatology": -0.0211042498279288,
+      "interval_coverage": 0.7641135184620079,
+      "fallback_share": 0.010866284334440035
+    },
+    "new_classifier": {
+      "n_test": 3277,
+      "base_rate": 0.614891669209643,
+      "auc": 0.9481578336800462,
+      "avg_precision": 0.9719238266751467,
+      "brier": 0.08668677269357278
+    }
+  },
+  "turbidity_h7": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.46849336526836277,
+      "hist_gbm": 0.4802183236454022,
+      "persistence": 0.46654019195673213,
+      "climatology": 0.7349814642623418,
+      "site_climatology": 0.6174223132080363
+    },
+    "n_train": 56067,
+    "n_features": 67,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T15:44:02.112981",
+    "cutoff": "2025-01-13",
+    "known": {
+      "n_test": 15511,
+      "mae": 5.077245182426838,
+      "rmse": 26.289738879924435,
+      "r2": -0.8253750950813479,
+      "persistence_mae": 5.077245182426838,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 4.758202618673201,
+      "skill_vs_climatology": -0.06705106724576582,
+      "interval_coverage": 0.822255173747663,
+      "fallback_share": 0.022066704495302902
+    },
+    "known_classifier": {
+      "n_test": 15511,
+      "base_rate": 0.23396299400425505,
+      "auc": 0.817739367767617,
+      "avg_precision": 0.6602121184699756,
+      "brier": 0.1294492596419937
+    },
+    "new": {
+      "n_test": 3242,
+      "mae": 25.027513880813512,
+      "rmse": 78.44514294422711,
+      "r2": -0.4038637053769951,
+      "persistence_mae": 25.027513880813512,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 22.46292350982579,
+      "skill_vs_climatology": -0.11416992849866192,
+      "interval_coverage": 0.7439851943244911,
+      "fallback_share": 0.020247809005741968
+    },
+    "new_classifier": {
+      "n_test": 3242,
+      "base_rate": 0.6141270820481185,
+      "auc": 0.9160269975882678,
+      "avg_precision": 0.9509879993194369,
+      "brier": 0.11494598871726036
+    }
+  },
+  "turbidity_h30": {
+    "status": "trained",
+    "best_model": "ridge",
+    "cv_mae_anomaly": {
+      "ridge": 0.5592253754601577,
+      "hist_gbm": 0.589009714234248,
+      "persistence": 0.6159026886490617,
+      "climatology": 0.7372385394151435,
+      "site_climatology": 0.6171448326160571
+    },
+    "n_train": 55252,
+    "n_features": 66,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T15:46:08.476438",
+    "cutoff": "2024-12-26",
+    "known": {
+      "n_test": 14968,
+      "mae": 4.368011944204804,
+      "rmse": 19.856286958454234,
+      "r2": -0.004881515032874484,
+      "persistence_mae": 5.981353554551608,
+      "skill_vs_persistence": 0.26972851473043336,
+      "climatology_mae": 4.844543319244417,
+      "skill_vs_climatology": 0.09836456062775711,
+      "interval_coverage": 0.8093933725280599,
+      "fallback_share": 0.04959045018731345
+    },
+    "known_classifier": {
+      "n_test": 14968,
+      "base_rate": 0.23536878674505612,
+      "auc": 0.7313124376328954,
+      "avg_precision": 0.4413621510629624,
+      "brier": 0.16903399062975033
+    },
+    "new": {
+      "n_test": 3158,
+      "mae": 20.112594877675917,
+      "rmse": 63.02898542271559,
+      "r2": 0.04232605289044222,
+      "persistence_mae": 29.242732741462422,
+      "skill_vs_persistence": 0.31221903727352907,
+      "climatology_mae": 22.128014086736794,
+      "skill_vs_climatology": 0.09107998581169063,
+      "interval_coverage": 0.7207093096896771,
+      "fallback_share": 0.04157814871016696
+    },
+    "new_classifier": {
+      "n_test": 3158,
+      "base_rate": 0.61051298290057,
+      "auc": 0.8462128495766286,
+      "avg_precision": 0.8897683729972956,
+      "brier": 0.17196794647509325
+    }
+  },
+  "ph_h1": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.07224158226746971,
+      "hist_gbm": 0.09245766179454787,
+      "persistence": 0.034949412190155675,
+      "climatology": 0.19381665596348277,
+      "site_climatology": 0.19413571057604825
+    },
+    "n_train": 2385,
+    "n_features": 72,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:47:42.215782",
+    "cutoff": "2025-01-18",
+    "known": {
+      "n_test": 638,
+      "mae": 0.032758604396473275,
+      "rmse": 0.06707032730744436,
+      "r2": 0.8593733998136175,
+      "persistence_mae": 0.032758604396473275,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.17367940951704755,
+      "skill_vs_climatology": 0.811384639736135,
+      "interval_coverage": 0.95141065830721,
+      "fallback_share": 0.0
+    },
+    "known_classifier": {
+      "n_test": 638,
+      "base_rate": 0.004702194357366771,
+      "auc": 0.6430446194225722,
+      "avg_precision": 0.018479916826220327,
+      "brier": 0.005244375816255619
+    },
+    "new": {
+      "n_test": 1283,
+      "mae": 0.040763846803993704,
+      "rmse": 0.07177735923230469,
+      "r2": 0.9075234180824641,
+      "persistence_mae": 0.040763846803993704,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.3003190702154475,
+      "skill_vs_climatology": 0.9686508890489166,
+      "interval_coverage": 0.8098207326578332,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 1283,
+      "base_rate": 0.014809041309431021,
+      "auc": 0.6995336442371752,
+      "avg_precision": 0.026117132680783382,
+      "brier": 0.014602768189430985
+    },
+    "classifier_dropped": "holdout AUC 0.64 < 0.65"
+  },
+  "ph_h3": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.10063935275198395,
+      "hist_gbm": 0.12864301493587793,
+      "persistence": 0.054438258197449976,
+      "climatology": 0.193916118392284,
+      "site_climatology": 0.19424181733574042
+    },
+    "n_train": 2381,
+    "n_features": 72,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T15:48:11.036016",
+    "cutoff": "2025-01-16",
+    "known": {
+      "n_test": 638,
+      "mae": 0.05877740181351904,
+      "rmse": 0.10255356223991505,
+      "r2": 0.6712179291387583,
+      "persistence_mae": 0.05877740181351904,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.17372532064487045,
+      "skill_vs_climatology": 0.6616647383620498,
+      "interval_coverage": 0.8746081504702194,
+      "fallback_share": 0.0
+    },
+    "known_classifier": {
+      "n_test": 638,
+      "base_rate": 0.004702194357366771,
+      "auc": 0.684514435695538,
+      "avg_precision": 0.04754941678904812,
+      "brier": 0.009993428211964339
+    },
+    "new": {
+      "n_test": 1283,
+      "mae": 0.07139518608456,
+      "rmse": 0.10905962280000128,
+      "r2": 0.7865064300048477,
+      "persistence_mae": 0.07139518608456,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.3003827234266974,
+      "skill_vs_climatology": 0.9450967897386214,
+      "interval_coverage": 0.6726422447388932,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 1283,
+      "base_rate": 0.014809041309431021,
+      "auc": 0.7218520986009327,
+      "avg_precision": 0.026018441162226087,
+      "brier": 0.0161803691058588
+    }
+  },
+  "ph_h7": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.12909452636361185,
+      "hist_gbm": 0.14734873047049799,
+      "persistence": 0.07604663973513115,
+      "climatology": 0.19408626937926682,
+      "site_climatology": 0.19440364409925043
+    },
+    "n_train": 2374,
+    "n_features": 72,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:49:05.745636",
+    "cutoff": "2025-01-13",
+    "known": {
+      "n_test": 637,
+      "mae": 0.07739399366513526,
+      "rmse": 0.12257053232570898,
+      "r2": 0.5310664928552971,
+      "persistence_mae": 0.07739399366513526,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.17391705620611247,
+      "skill_vs_climatology": 0.5549948041127482,
+      "interval_coverage": 0.8288854003139717,
+      "fallback_share": 0.0
+    },
+    "known_classifier": {
+      "n_test": 637,
+      "base_rate": 0.004709576138147566,
+      "auc": 0.6340694006309149,
+      "avg_precision": 0.008173018753781004,
+      "brier": 0.019498759792885435
+    },
+    "new": {
+      "n_test": 1281,
+      "mae": 0.09336456965879013,
+      "rmse": 0.1350398203477594,
+      "r2": 0.673088464811599,
+      "persistence_mae": 0.09336456965879013,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.3006241869516642,
+      "skill_vs_climatology": 0.9282155671135002,
+      "interval_coverage": 0.6042154566744731,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 1281,
+      "base_rate": 0.01483216237314598,
+      "auc": 0.8111185253148719,
+      "avg_precision": 0.037644427129722456,
+      "brier": 0.027194302600495986
+    },
+    "classifier_dropped": "holdout AUC 0.63 < 0.65"
+  },
+  "ph_h30": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.22578882874147607,
+      "hist_gbm": 0.21972857857065864,
+      "persistence": 0.1673653943894718,
+      "climatology": 0.19183764345442333,
+      "site_climatology": 0.19211835175950473
+    },
+    "n_train": 2333,
+    "n_features": 72,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:49:44.585594",
+    "cutoff": "2024-12-26",
+    "known": {
+      "n_test": 632,
+      "mae": 0.1306961352312112,
+      "rmse": 0.17062795006018935,
+      "r2": 0.09824931212411336,
+      "persistence_mae": 0.1306961352312112,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.17479692001949318,
+      "skill_vs_climatology": 0.25229726463923907,
+      "interval_coverage": 0.8607594936708861,
+      "fallback_share": 0.0
+    },
+    "known_classifier": {
+      "n_test": 632,
+      "base_rate": 0.004746835443037975,
+      "auc": 0.5458399576046634,
+      "avg_precision": 0.006900082588155982,
+      "brier": 0.054404834395178805
+    },
+    "new": {
+      "n_test": 1271,
+      "mae": 0.13170731414686873,
+      "rmse": 0.17677946330244582,
+      "r2": 0.4433463079081177,
+      "persistence_mae": 0.13170731414686873,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.3015353502139406,
+      "skill_vs_climatology": 0.8988061952176564,
+      "interval_coverage": 0.8379228953579858,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 1271,
+      "base_rate": 0.014948859166011016,
+      "auc": 0.7679502270052128,
+      "avg_precision": 0.030606860760461128,
+      "brier": 0.059476142450836475
+    },
+    "classifier_dropped": "holdout AUC 0.55 < 0.65"
+  },
+  "dissolved_oxygen_h1": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.23806767801259493,
+      "hist_gbm": 0.30259530816847985,
+      "persistence": 0.19432310005829534,
+      "climatology": 0.6639810606340334,
+      "site_climatology": 0.5527408661375318
+    },
+    "n_train": 4472,
+    "n_features": 76,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:50:16.943793",
+    "cutoff": "2025-01-18",
+    "known": {
+      "n_test": 1277,
+      "mae": 0.1339859047623099,
+      "rmse": 0.21598238322995744,
+      "r2": 0.9893227767756616,
+      "persistence_mae": 0.1339859047623099,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.604116224518562,
+      "skill_vs_climatology": 0.778211709395676,
+      "interval_coverage": 0.9412685982772122,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 1288,
+      "mae": 0.3078416060216679,
+      "rmse": 0.44782948052597144,
+      "r2": 0.9628512233108384,
+      "persistence_mae": 0.3078416060216679,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.126883383779232,
+      "skill_vs_climatology": 0.7268203520853608,
+      "interval_coverage": 0.703416149068323,
+      "fallback_share": 0.0
+    }
+  },
+  "dissolved_oxygen_h3": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.36207989184786404,
+      "hist_gbm": 0.4731287155247175,
+      "persistence": 0.33633770553340814,
+      "climatology": 0.6637617259540808,
+      "site_climatology": 0.5529127373265956
+    },
+    "n_train": 4466,
+    "n_features": 76,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:50:51.295348",
+    "cutoff": "2025-01-16",
+    "known": {
+      "n_test": 1277,
+      "mae": 0.2228661016644961,
+      "rmse": 0.3408267577258779,
+      "r2": 0.9734117942611208,
+      "persistence_mae": 0.2228661016644961,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.6043773458687866,
+      "skill_vs_climatology": 0.6312467646448127,
+      "interval_coverage": 0.9248238057948316,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 1288,
+      "mae": 0.5822204980790985,
+      "rmse": 0.8300405898540041,
+      "r2": 0.8723802709341345,
+      "persistence_mae": 0.5822204980790985,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 1.1271248600029822,
+      "skill_vs_climatology": 0.48344631660634474,
+      "interval_coverage": 0.6180124223602484,
+      "fallback_share": 0.0
+    }
+  },
+  "dissolved_oxygen_h7": {
+    "status": "trained",
+    "best_model": "ridge",
+    "cv_mae_anomaly": {
+      "ridge": 0.4484007220002741,
+      "hist_gbm": 0.5351749430029251,
+      "persistence": 0.4683774728274399,
+      "climatology": 0.6636403763540615,
+      "site_climatology": 0.5534174756783783
+    },
+    "n_train": 4456,
+    "n_features": 76,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:51:27.098653",
+    "cutoff": "2025-01-13",
+    "known": {
+      "n_test": 1275,
+      "mae": 0.32213028684593004,
+      "rmse": 0.42692937413734566,
+      "r2": 0.9582159119476426,
+      "persistence_mae": 0.33356863508037493,
+      "skill_vs_persistence": 0.03429083862062987,
+      "climatology_mae": 0.6048953283105659,
+      "skill_vs_climatology": 0.46746110976651223,
+      "interval_coverage": 0.9058823529411765,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 1286,
+      "mae": 0.7336644112722863,
+      "rmse": 0.9729328601970948,
+      "r2": 0.8243616025552594,
+      "persistence_mae": 0.7652410837947673,
+      "skill_vs_persistence": 0.04126369217645098,
+      "climatology_mae": 1.1271463037715306,
+      "skill_vs_climatology": 0.34909566857702434,
+      "interval_coverage": 0.5614307931570762,
+      "fallback_share": 0.0
+    }
+  },
+  "dissolved_oxygen_h30": {
+    "status": "trained",
+    "best_model": "site_climatology",
+    "cv_mae_anomaly": {
+      "ridge": 0.590426878433016,
+      "hist_gbm": 0.587794629632057,
+      "persistence": 1.0920481361748617,
+      "climatology": 0.6640294552456549,
+      "site_climatology": 0.5556817297213553
+    },
+    "n_train": 4397,
+    "n_features": 76,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:52:03.325228",
+    "cutoff": "2024-12-26",
+    "known": {
+      "n_test": 1265,
+      "mae": 0.6059865930116773,
+      "rmse": 0.7373735237374676,
+      "r2": 0.8740427596962483,
+      "persistence_mae": 0.9217391375967636,
+      "skill_vs_persistence": 0.34256172023718456,
+      "climatology_mae": 0.6059865930116773,
+      "skill_vs_climatology": 0.0,
+      "interval_coverage": 0.7952569169960474,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 1276,
+      "mae": 1.1257654326301747,
+      "rmse": 1.4025060568587626,
+      "r2": 0.6312949525910005,
+      "persistence_mae": 1.2887931041956695,
+      "skill_vs_persistence": 0.12649638722829737,
+      "climatology_mae": 1.1257654326301747,
+      "skill_vs_climatology": 0.0,
+      "interval_coverage": 0.45846394984326017,
+      "fallback_share": 0.0
+    }
+  },
+  "specific_conductance_h1": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.05883511256289238,
+      "hist_gbm": 0.06259584425454268,
+      "persistence": 0.04550199323353607,
+      "climatology": 0.7348011447799299,
+      "site_climatology": 0.3056296796980834
+    },
+    "n_train": 31301,
+    "n_features": 98,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:53:00.517843",
+    "cutoff": "2025-01-18",
+    "known": {
+      "n_test": 12970,
+      "mae": 24.21499357260276,
+      "rmse": 90.42252243962061,
+      "r2": 0.9655867863685009,
+      "persistence_mae": 24.214993572602754,
+      "skill_vs_persistence": -2.220446049250313e-16,
+      "climatology_mae": 119.10422295747854,
+      "skill_vs_climatology": 0.7966907220305046,
+      "interval_coverage": 0.8080185042405551,
+      "fallback_share": 0.0010782501540357314
+    },
+    "new": {
+      "n_test": 3170,
+      "mae": 21.990220820189283,
+      "rmse": 41.149994921250325,
+      "r2": 0.9813526909239764,
+      "persistence_mae": 21.990220820189275,
+      "skill_vs_persistence": -2.220446049250313e-16,
+      "climatology_mae": 184.5409978045074,
+      "skill_vs_climatology": 0.8808382902346474,
+      "interval_coverage": 0.762776025236593,
+      "fallback_share": 0.000315357931251925
+    }
+  },
+  "specific_conductance_h3": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.09950876674840542,
+      "hist_gbm": 0.11563925994659127,
+      "persistence": 0.08830395998557579,
+      "climatology": 0.7346802511216113,
+      "site_climatology": 0.30541079182349906
+    },
+    "n_train": 31264,
+    "n_features": 98,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:54:01.771615",
+    "cutoff": "2025-01-16",
+    "known": {
+      "n_test": 12947,
+      "mae": 48.128433871031675,
+      "rmse": 157.9278316077424,
+      "r2": 0.89517744403957,
+      "persistence_mae": 48.128433871031675,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 119.19468657419387,
+      "skill_vs_climatology": 0.5962199720952017,
+      "interval_coverage": 0.8127751602687882,
+      "fallback_share": 0.002849661121380187
+    },
+    "new": {
+      "n_test": 3170,
+      "mae": 43.57981072555205,
+      "rmse": 76.21065360169453,
+      "r2": 0.9360398615547182,
+      "persistence_mae": 43.57981072555205,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 184.50439222669797,
+      "skill_vs_climatology": 0.7638006868042136,
+      "interval_coverage": 0.7892744479495268,
+      "fallback_share": 0.000315357931251925
+    }
+  },
+  "specific_conductance_h7": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.13347548622858768,
+      "hist_gbm": 0.15162813459653768,
+      "persistence": 0.12272359085635216,
+      "climatology": 0.7345153442445428,
+      "site_climatology": 0.3051610969245674
+    },
+    "n_train": 31204,
+    "n_features": 98,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:55:00.791547",
+    "cutoff": "2025-01-13",
+    "known": {
+      "n_test": 12883,
+      "mae": 69.31025123314893,
+      "rmse": 213.57505117472834,
+      "r2": 0.8086916204315948,
+      "persistence_mae": 69.31025123314893,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 119.33616986073037,
+      "skill_vs_climatology": 0.4192016442790437,
+      "interval_coverage": 0.8041605216176356,
+      "fallback_share": 0.006324720401079786
+    },
+    "new": {
+      "n_test": 3165,
+      "mae": 61.976619273301736,
+      "rmse": 99.90940920350478,
+      "r2": 0.8898940576028297,
+      "persistence_mae": 61.976619273301736,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 184.40562007361328,
+      "skill_vs_climatology": 0.6639114401797452,
+      "interval_coverage": 0.7838862559241706,
+      "fallback_share": 0.00031585596967786955
+    }
+  },
+  "specific_conductance_h30": {
     "status": "trained",
     "best_model": "hist_gbm",
-    "cv_mae": {
-      "ridge": 25.584400877320814,
-      "random_forest": 23.511887161821534,
-      "hist_gbm": 23.37240982242516
+    "cv_mae_anomaly": {
+      "ridge": 0.20575808381804137,
+      "hist_gbm": 0.19805058168477926,
+      "persistence": 0.19890210182383122,
+      "climatology": 0.7341397808646635,
+      "site_climatology": 0.3036069265670458
     },
-    "n_train": 14763,
-    "n_features": 57
+    "n_train": 30850,
+    "n_features": 98,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:57:06.104635",
+    "cutoff": "2024-12-26",
+    "known": {
+      "n_test": 12587,
+      "mae": 96.50786940070898,
+      "rmse": 208.97440956667802,
+      "r2": 0.8164039494072162,
+      "persistence_mae": 108.12177246486524,
+      "skill_vs_persistence": 0.10741502658893487,
+      "climatology_mae": 119.46181305693165,
+      "skill_vs_climatology": 0.1921446114775066,
+      "interval_coverage": 0.710733296258044,
+      "fallback_share": 0.02206510760624658
+    },
+    "new": {
+      "n_test": 3136,
+      "mae": 285.87468672610703,
+      "rmse": 357.81736037870604,
+      "r2": -0.4275630683633027,
+      "persistence_mae": 101.55739795918367,
+      "skill_vs_persistence": -1.81490755445508,
+      "climatology_mae": 183.42995618956633,
+      "skill_vs_climatology": -0.5584950935204327,
+      "interval_coverage": 0.38552295918367346,
+      "fallback_share": 0.0015918497293855305
+    }
   },
-  "ph": {
-    "n_test": 2648,
-    "mae": 0.08928275365561607,
-    "rmse": 0.1179450576162492,
-    "r2": 0.9601470661423397,
-    "persistence_mae": 0.08861911987860387,
-    "skill_vs_persistence": -0.0020124529390670443,
+  "nitrate_h1": {
     "status": "trained",
-    "best_model": "ridge",
-    "cv_mae": {
-      "ridge": 0.09734615309565531,
-      "random_forest": 0.11599221064304209,
-      "hist_gbm": 0.11330917807371041
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.10502558410155731,
+      "hist_gbm": 0.07898151023879536,
+      "persistence": 0.07730304791818507,
+      "climatology": 0.1336714884117658,
+      "site_climatology": 0.10568310269784459
     },
-    "n_train": 13452,
-    "n_features": 57
+    "n_train": 476,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:57:37.582924",
+    "cutoff": "2022-07-01",
+    "known": {
+      "n_test": 89,
+      "mae": 0.0743782084560796,
+      "rmse": 0.11521319467397728,
+      "r2": 0.8455039546051502,
+      "persistence_mae": 0.0743782084560796,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.09845107121148766,
+      "skill_vs_climatology": 0.24451600636925463,
+      "interval_coverage": 0.8651685393258427,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 46,
+      "mae": 0.144637582094773,
+      "rmse": 0.20331217745722785,
+      "r2": 0.4928756802892207,
+      "persistence_mae": 0.144637582094773,
+      "skill_vs_persistence": 0.0,
+      "climatology_mae": 0.1683795073658311,
+      "skill_vs_climatology": 0.14100246308165643,
+      "interval_coverage": 0.6956521739130435,
+      "fallback_share": 0.04166666666666663
+    }
   },
-  "dissolved_oxygen": {
-    "n_test": 3507,
-    "mae": 0.5263119222835978,
-    "rmse": 0.8231560535463797,
-    "r2": 0.8691080969642991,
-    "persistence_mae": 0.6194110920526015,
-    "skill_vs_persistence": 0.1493017052740947,
+  "nitrate_h3": {
     "status": "trained",
-    "best_model": "ridge",
-    "cv_mae": {
-      "ridge": 0.5248662270480112,
-      "random_forest": 0.536800504130131,
-      "hist_gbm": 0.5361198183545591
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.11624885332276225,
+      "hist_gbm": 0.08082120279339698,
+      "persistence": 0.08085502606871864,
+      "climatology": 0.1419400515972353,
+      "site_climatology": 0.11125441984055497
     },
-    "n_train": 15236,
-    "n_features": 57
+    "n_train": 2128,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:58:33.779133",
+    "cutoff": "2022-05-10",
+    "known": {
+      "n_test": 449,
+      "mae": 0.11935878175722581,
+      "rmse": 0.19952083183066505,
+      "r2": 0.5654219173971383,
+      "persistence_mae": 0.08097239664210243,
+      "skill_vs_persistence": -0.4740675428540295,
+      "climatology_mae": 0.10432981155915638,
+      "skill_vs_climatology": -0.14405250017678606,
+      "interval_coverage": 0.7839643652561247,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 224,
+      "mae": 0.1954259495118031,
+      "rmse": 0.3088718528745001,
+      "r2": -0.2064510432640867,
+      "persistence_mae": 0.15704098749639733,
+      "skill_vs_persistence": -0.24442639229001495,
+      "climatology_mae": 0.1707332404868802,
+      "skill_vs_climatology": -0.14462742553533592,
+      "interval_coverage": 0.6473214285714286,
+      "fallback_share": 0.042735042735042694
+    }
   },
-  "specific_conductance": {
-    "n_test": 6223,
-    "mae": 40.65740366570111,
-    "rmse": 63.353016599653685,
-    "r2": 0.8908245703200779,
-    "persistence_mae": 29.999675798346573,
-    "skill_vs_persistence": -0.35237153368562835,
+  "nitrate_h7": {
     "status": "trained",
-    "best_model": "random_forest",
-    "cv_mae": {
-      "ridge": 44.53149448915724,
-      "random_forest": 43.39044644382171,
-      "hist_gbm": 44.84366519239132
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.10753166862232089,
+      "hist_gbm": 0.07558628751712751,
+      "persistence": 0.08148249757969592,
+      "climatology": 0.14311141748244804,
+      "site_climatology": 0.11187946686167315
     },
-    "n_train": 17051,
-    "n_features": 57
+    "n_train": 2887,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T15:59:44.642476",
+    "cutoff": "2022-05-15",
+    "known": {
+      "n_test": 598,
+      "mae": 0.12560339903722526,
+      "rmse": 0.22550968739192107,
+      "r2": 0.46470076620684,
+      "persistence_mae": 0.08466975334221902,
+      "skill_vs_persistence": -0.4834506311782938,
+      "climatology_mae": 0.10654182493867279,
+      "skill_vs_climatology": -0.17891165379910312,
+      "interval_coverage": 0.8043478260869565,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 307,
+      "mae": 0.20623517193900262,
+      "rmse": 0.3173289270692133,
+      "r2": -0.2737730073953708,
+      "persistence_mae": 0.15966277385088054,
+      "skill_vs_persistence": -0.29169227719680646,
+      "climatology_mae": 0.1704533396998628,
+      "skill_vs_climatology": -0.20992156740457601,
+      "interval_coverage": 0.6188925081433225,
+      "fallback_share": 0.04361370716510904
+    }
   },
-  "nitrate": {
-    "status": "skipped",
-    "n_train": 355,
-    "n_test": 0
+  "nitrate_h30": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.10945159700921528,
+      "hist_gbm": 0.08593999629877258,
+      "persistence": 0.08893094594489039,
+      "climatology": 0.14346599069538635,
+      "site_climatology": 0.11219141745253272
+    },
+    "n_train": 2785,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:00:17.642736",
+    "cutoff": "2022-04-26",
+    "known": {
+      "n_test": 594,
+      "mae": 0.1368493631804792,
+      "rmse": 0.24620800667470402,
+      "r2": 0.36532032692992145,
+      "persistence_mae": 0.10299864775102949,
+      "skill_vs_persistence": -0.3286520373672708,
+      "climatology_mae": 0.10748475516748637,
+      "skill_vs_climatology": -0.27319788715372595,
+      "interval_coverage": 0.7895622895622896,
+      "fallback_share": 0.0
+    },
+    "new": {
+      "n_test": 297,
+      "mae": 0.19891040410962949,
+      "rmse": 0.29437937794045566,
+      "r2": -0.09531701776368773,
+      "persistence_mae": 0.17054036427728256,
+      "skill_vs_persistence": -0.166353812791322,
+      "climatology_mae": 0.1675876630552107,
+      "skill_vs_climatology": -0.1869036209670143,
+      "interval_coverage": 0.7104377104377104,
+      "fallback_share": 0.07476635514018692
+    }
   },
-  "e_coli": {
+  "e_coli_h1": {
     "status": "skipped",
     "n_train": 0,
-    "n_test": 0
+    "n_test": 0,
+    "reason": "too few labelled rows"
   },
-  "lead": {
-    "status": "skipped",
-    "n_train": 31,
-    "n_test": 0
-  },
-  "sulfate": {
-    "status": "skipped",
-    "n_train": 53,
-    "n_test": 0
-  },
-  "fluoride": {
-    "status": "skipped",
-    "n_train": 52,
-    "n_test": 0
-  },
-  "hardness": {
+  "e_coli_h3": {
     "status": "skipped",
     "n_train": 0,
-    "n_test": 0
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "e_coli_h7": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "e_coli_h30": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "lead_h1": {
+    "status": "skipped",
+    "n_train": 80,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "lead_h3": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.08365130217325362,
+      "hist_gbm": 0.0702694124526542,
+      "persistence": 0.09319744442084918,
+      "climatology": 0.08929653089169784,
+      "site_climatology": 0.0886311051675909
+    },
+    "n_train": 205,
+    "n_features": 59,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:00:22.060415",
+    "cutoff": "2023-04-26",
+    "known": {
+      "n_test": 35,
+      "mae": 0.036583280232494464,
+      "rmse": 0.04760097894669244,
+      "r2": 0.6295352484175643,
+      "persistence_mae": 0.0852857157588005,
+      "skill_vs_persistence": 0.5710503229408672,
+      "climatology_mae": 0.05934286775023387,
+      "skill_vs_climatology": 0.38352692380037046,
+      "interval_coverage": 0.9714285714285714,
+      "fallback_share": 0.2222222222222222
+    },
+    "new": {
+      "n_test": 15,
+      "mae": 0.07521949733733987,
+      "rmse": 0.10559568719214081,
+      "r2": -4.186254618701985,
+      "persistence_mae": 0.050500003000100456,
+      "skill_vs_persistence": -0.48949490829119835,
+      "climatology_mae": 0.06510454485186708,
+      "skill_vs_climatology": -0.15536476767462903,
+      "interval_coverage": 0.6666666666666666,
+      "fallback_share": 0.5714285714285714
+    }
+  },
+  "lead_h7": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.08803052432751401,
+      "hist_gbm": 0.07295267647012078,
+      "persistence": 0.1004595842351472,
+      "climatology": 0.09204327763718503,
+      "site_climatology": 0.09135089778174174
+    },
+    "n_train": 280,
+    "n_features": 59,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:00:25.303633",
+    "cutoff": "2023-02-17",
+    "known": {
+      "n_test": 51,
+      "mae": 0.06831182092615033,
+      "rmse": 0.08199424000848313,
+      "r2": -0.09851677163149297,
+      "persistence_mae": 0.08288235421858582,
+      "skill_vs_persistence": 0.17579777299771904,
+      "climatology_mae": 0.06132306405545452,
+      "skill_vs_climatology": -0.11396620469544505,
+      "interval_coverage": 0.8627450980392157,
+      "fallback_share": 0.203125
+    },
+    "new": {
+      "n_test": 23,
+      "mae": 0.12661602088722385,
+      "rmse": 0.138372073056044,
+      "r2": -8.342172941516166,
+      "persistence_mae": 0.04784782878730608,
+      "skill_vs_persistence": -1.6462229132707225,
+      "climatology_mae": 0.06760899998412966,
+      "skill_vs_climatology": -0.8727687277869121,
+      "interval_coverage": 0.5217391304347826,
+      "fallback_share": 0.5306122448979591
+    }
+  },
+  "lead_h30": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.07577568388281028,
+      "hist_gbm": 0.07565619085054867,
+      "persistence": 0.10379126713090002,
+      "climatology": 0.08931832223170544,
+      "site_climatology": 0.08876445780502287
+    },
+    "n_train": 280,
+    "n_features": 59,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:00:29.377281",
+    "cutoff": "2023-03-29",
+    "known": {
+      "n_test": 56,
+      "mae": 0.11859990425063553,
+      "rmse": 0.14418978058977636,
+      "r2": -2.4312408450593996,
+      "persistence_mae": 0.07985714357346296,
+      "skill_vs_persistence": -0.48515084491510696,
+      "climatology_mae": 0.06320321330426823,
+      "skill_vs_climatology": -0.8764853565226289,
+      "interval_coverage": 0.5535714285714286,
+      "fallback_share": 0.11111111111111116
+    },
+    "new": {
+      "n_test": 28,
+      "mae": 0.1415737580353303,
+      "rmse": 0.17012139391638298,
+      "r2": -14.930799324915968,
+      "persistence_mae": 0.03707143025738852,
+      "skill_vs_persistence": -2.818945129777234,
+      "climatology_mae": 0.0721269602707213,
+      "skill_vs_climatology": -0.9628410445130007,
+      "interval_coverage": 0.4642857142857143,
+      "fallback_share": 0.4285714285714286
+    }
+  },
+  "sulfate_h1": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.22017536814819014,
+      "hist_gbm": 0.13170183258422996,
+      "persistence": 0.16125041669283355,
+      "climatology": 0.47322748315913754,
+      "site_climatology": 0.35345335819733925
+    },
+    "n_train": 389,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:00:33.876472",
+    "cutoff": "2022-05-30",
+    "known": {
+      "n_test": 79,
+      "mae": 0.5850245215382682,
+      "rmse": 2.273005520703732,
+      "r2": 0.9577760089071456,
+      "persistence_mae": 0.5707594971113568,
+      "skill_vs_persistence": -0.024993056618606513,
+      "climatology_mae": 2.013078064486398,
+      "skill_vs_climatology": 0.7093880600762856,
+      "interval_coverage": 0.9493670886075949,
+      "fallback_share": 0.024691358024691357
+    },
+    "new": {
+      "n_test": 17,
+      "mae": 0.34340079925119926,
+      "rmse": 0.40594437093710034,
+      "r2": 0.5449653263132745,
+      "persistence_mae": 0.37294115739710193,
+      "skill_vs_persistence": 0.07920916627190211,
+      "climatology_mae": 0.8872609880075045,
+      "skill_vs_climatology": 0.6129652899285427,
+      "interval_coverage": 0.9411764705882353,
+      "fallback_share": 0.0
+    }
+  },
+  "sulfate_h3": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.2246971360545859,
+      "hist_gbm": 0.1222696424141818,
+      "persistence": 0.15213302189679037,
+      "climatology": 0.504682841134699,
+      "site_climatology": 0.3845707271372841
+    },
+    "n_train": 1764,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T16:00:46.156554",
+    "cutoff": "2022-05-08",
+    "known": {
+      "n_test": 341,
+      "mae": 0.4817757086838351,
+      "rmse": 1.709197954939051,
+      "r2": 0.9792936647381647,
+      "persistence_mae": 0.6220527855881498,
+      "skill_vs_persistence": 0.22550670964632524,
+      "climatology_mae": 2.222383849624924,
+      "skill_vs_climatology": 0.7832166982471793,
+      "interval_coverage": 0.8826979472140762,
+      "fallback_share": 0.028490028490028463
+    },
+    "known_classifier": {
+      "n_test": 341,
+      "base_rate": 0.0
+    },
+    "new": {
+      "n_test": 63,
+      "mae": 0.33724220062861,
+      "rmse": 0.4310566073726587,
+      "r2": 0.414291546839086,
+      "persistence_mae": 0.4015872875849406,
+      "skill_vs_persistence": 0.1602269019601893,
+      "climatology_mae": 0.8412684269238749,
+      "skill_vs_climatology": 0.5991265215292259,
+      "interval_coverage": 0.6825396825396826,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 63,
+      "base_rate": 0.0
+    }
+  },
+  "sulfate_h7": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.24406077157144695,
+      "hist_gbm": 0.12604697202806261,
+      "persistence": 0.13945005649226028,
+      "climatology": 0.5184755137961832,
+      "site_climatology": 0.39771498430136476
+    },
+    "n_train": 2358,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T16:01:00.965095",
+    "cutoff": "2022-04-30",
+    "known": {
+      "n_test": 457,
+      "mae": 0.409187981897258,
+      "rmse": 1.0225512408800157,
+      "r2": 0.9934553117184906,
+      "persistence_mae": 0.6957768071402084,
+      "skill_vs_persistence": 0.41189764059669043,
+      "climatology_mae": 2.4939824319004362,
+      "skill_vs_climatology": 0.8359298860074755,
+      "interval_coverage": 0.8599562363238512,
+      "fallback_share": 0.02558635394456288
+    },
+    "known_classifier": {
+      "n_test": 457,
+      "base_rate": 0.0
+    },
+    "new": {
+      "n_test": 83,
+      "mae": 0.3839560827167375,
+      "rmse": 0.47266453293305194,
+      "r2": 0.28928160655247326,
+      "persistence_mae": 0.38269075428146915,
+      "skill_vs_persistence": -0.003306399282219541,
+      "climatology_mae": 0.8396370707184275,
+      "skill_vs_climatology": 0.5427118500280019,
+      "interval_coverage": 0.6385542168674698,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 83,
+      "base_rate": 0.0
+    }
+  },
+  "sulfate_h30": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.2018783188760243,
+      "hist_gbm": 0.12873168131277007,
+      "persistence": 0.14183298890213522,
+      "climatology": 0.507529085572891,
+      "site_climatology": 0.38354021245416886
+    },
+    "n_train": 2284,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": true,
+    "trained_at": "2026-10-25T16:01:15.538872",
+    "cutoff": "2022-04-12",
+    "known": {
+      "n_test": 458,
+      "mae": 0.674889714817967,
+      "rmse": 2.1018577160843757,
+      "r2": 0.9841364045696565,
+      "persistence_mae": 0.8367139457615181,
+      "skill_vs_persistence": 0.19340448639979357,
+      "climatology_mae": 3.904526425906941,
+      "skill_vs_climatology": 0.8271519664100611,
+      "interval_coverage": 0.9061135371179039,
+      "fallback_share": 0.004347826086956497
+    },
+    "known_classifier": {
+      "n_test": 458,
+      "base_rate": 0.0
+    },
+    "new": {
+      "n_test": 83,
+      "mae": 0.48854049341443206,
+      "rmse": 0.6098362285166227,
+      "r2": -0.18309049644308195,
+      "persistence_mae": 0.471485952296889,
+      "skill_vs_persistence": -0.03617189660574249,
+      "climatology_mae": 0.8428340202015907,
+      "skill_vs_climatology": 0.4203597841273873,
+      "interval_coverage": 0.5903614457831325,
+      "fallback_share": 0.0
+    },
+    "new_classifier": {
+      "n_test": 83,
+      "base_rate": 0.0
+    }
+  },
+  "fluoride_h1": {
+    "status": "skipped",
+    "n_train": 123,
+    "n_test": 27
+  },
+  "fluoride_h3": {
+    "status": "trained",
+    "best_model": "persistence",
+    "cv_mae_anomaly": {
+      "ridge": 0.03700650052525527,
+      "hist_gbm": 0.02686032052951224,
+      "persistence": 0.025875377260847814,
+      "climatology": 0.08955222149280233,
+      "site_climatology": 0.08474287564446335
+    },
+    "n_train": 631,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:01:21.187506",
+    "cutoff": "2022-07-13",
+    "known": {
+      "n_test": 110,
+      "mae": 0.011818179860711101,
+      "rmse": 0.03074823856234052,
+      "r2": 0.944171285592726,
+      "persistence_mae": 0.011818179860711098,
+      "skill_vs_persistence": -2.220446049250313e-16,
+      "climatology_mae": 0.07034170823818277,
+      "skill_vs_climatology": 0.8319890125401308,
+      "interval_coverage": 0.9090909090909091,
+      "fallback_share": 0.04347826086956519
+    }
+  },
+  "fluoride_h7": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.037206878328614475,
+      "hist_gbm": 0.024688229890137768,
+      "persistence": 0.024965425293920665,
+      "climatology": 0.08973123394095188,
+      "site_climatology": 0.0849673012869842
+    },
+    "n_train": 875,
+    "n_features": 62,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:01:28.150189",
+    "cutoff": "2022-07-10",
+    "known": {
+      "n_test": 153,
+      "mae": 0.01871945987942773,
+      "rmse": 0.04911532092488871,
+      "r2": 0.8663202608748941,
+      "persistence_mae": 0.012941174671735639,
+      "skill_vs_persistence": -0.44650391902307285,
+      "climatology_mae": 0.072612208385148,
+      "skill_vs_climatology": 0.7421995516217272,
+      "interval_coverage": 0.9084967320261438,
+      "fallback_share": 0.03164556962025311
+    }
+  },
+  "fluoride_h30": {
+    "status": "trained",
+    "best_model": "hist_gbm",
+    "cv_mae_anomaly": {
+      "ridge": 0.03556113168721593,
+      "hist_gbm": 0.01884036372629281,
+      "persistence": 0.023460124443066967,
+      "climatology": 0.08971038450298939,
+      "site_climatology": 0.08487659482944876
+    },
+    "n_train": 845,
+    "n_features": 61,
+    "interval_calibrated": true,
+    "classifier_fitted": false,
+    "trained_at": "2026-10-25T16:01:36.394442",
+    "cutoff": "2022-07-10",
+    "known": {
+      "n_test": 156,
+      "mae": 0.01331191434009031,
+      "rmse": 0.027371375106271443,
+      "r2": 0.9627101069035302,
+      "persistence_mae": 0.014999998661761101,
+      "skill_vs_persistence": 0.11253896481832082,
+      "climatology_mae": 0.07655277265675078,
+      "skill_vs_climatology": 0.826108005260912,
+      "interval_coverage": 0.8653846153846154,
+      "fallback_share": 0.0
+    }
+  },
+  "hardness_h1": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "hardness_h3": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "hardness_h7": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
+  },
+  "hardness_h30": {
+    "status": "skipped",
+    "n_train": 0,
+    "n_test": 0,
+    "reason": "too few labelled rows"
   }
 }

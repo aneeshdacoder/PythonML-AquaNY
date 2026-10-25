@@ -1,6 +1,7 @@
-pandas
-requests
-numpy
-joblib
-scikit-learn
-matplotlib #optional
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+requests>=2.31
+joblib>=1.3
+pyarrow>=14        # optional but recommended: Parquet tables instead of CSV
+matplotlib>=3.7    # optional: evaluate.py plots
